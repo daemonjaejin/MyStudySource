@@ -6,7 +6,7 @@ public class alphabet_C_Plus {
 		String test2 = "C361651";
 		String test3 = "254627";
 		String test4 = "958717";
-		String test5 = "568647";
+		String test5 = "c568647";
 		
 		System.out.println("test1 : " + confimWordPlus(test1));
 		System.out.println("test2 : " + confimWordPlus(test2));
@@ -19,10 +19,10 @@ public class alphabet_C_Plus {
 		String sum = "";
 		for (int i = 0; i < word.length(); i++) {
 			String dic = word.substring(i, i+1);
-			if(i==0 && !dic.equals("C")){
+			if(i==0 && !dic.toUpperCase().equals("C")){
 				dic = "C" + dic;
 			}
-			sum += dic;
+			sum += dic.toUpperCase();
 			System.out.println(i + " : " + dic);
 		}
 		return sum;
